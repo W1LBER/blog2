@@ -1,0 +1,18 @@
+<h1>Home</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Content</th>
+    <th>Image_url</th>
+  </tr>
+
+<%@posts.each do |post|%>
+  <tr>
+    <td><%=post.title%></td>
+    <td><%=post.content%></td>
+    <td><%=post.image_url%></td>
+  </tr>
+<%end%>
+
+</table>

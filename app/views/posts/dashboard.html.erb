@@ -1,0 +1,18 @@
+<h1>New</h1>
+
+<%=form_with url: posts_create_path, local: true do |form|%>
+  <%=form.label :title%>
+  <%=form.text_field :title%>
+  <br>
+
+  <%=form.label :content%>
+  <%=form.text_field :content%>
+  
+  <br>
+
+  <%=form.label :image%>
+  <%=form.text_field :image_url%>
+
+  <%= form.submit :send%>
+  
+<%end%>
